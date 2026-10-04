@@ -1,0 +1,47 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 0.5
+      Plane Cell Count: 12
+      Reference Frame: map
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Names: true
+      Marker Scale: 0.4
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Persistent map (bananas / poops)
+      Enabled: true
+      Topic:
+        Value: /yolo_pf/map_markers
+    - Class: rviz_default_plugins/Marker
+      Name: Live YOLO detections
+      Enabled: true
+      Topic:
+        Value: /yolo/object_3d_point
+    - Class: rviz_default_plugins/Image
+      Name: YOLO annotated image
+      Enabled: true
+      Topic:
+        Value: /yolo/annotated
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48; 48; 48
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Top view
+      Scale: 120
+      X: 0
+      Y: 0
+Window Geometry:
+  Width: 1400
+  Height: 900
