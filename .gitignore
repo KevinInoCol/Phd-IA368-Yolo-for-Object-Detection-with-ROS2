@@ -5,6 +5,5 @@ ros2_ws/log/
 # python
 __pycache__/
 *.pyc
-# generated dataset and training runs (regenerate with training/generate_dataset.py)
-training/dataset/
+# training runs (regenerate with training/train.py)
 training/runs/

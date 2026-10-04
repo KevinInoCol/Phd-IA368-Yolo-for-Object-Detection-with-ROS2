@@ -1,0 +1,7 @@
+# YOLO dataset generated from the CoppeliaSim scene (training/generate_dataset.py)
+# "path" is omitted: ultralytics resolves train/val relative to this file.
+train: images/train
+val: images/val
+names:
+  0: banana
+  1: poop
